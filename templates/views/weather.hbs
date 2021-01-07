@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlink}}
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- left side div -->
+    <div class="containter-fluid main_header wether_main">
+
+        <div class="col-md-5 col-12 mx-auto">
+            <div class="main_content">
+                <form class="temp_form" action="">
+
+                    <input type="text" id="cityname" class="cityname" placeholder="enter your city name"
+                        autocomplete="off">
+                    <input type="submit" class="submitbut" value="search" id="submitBut">
+                </form>
+                <div class="tempinfo">
+                    <div class="top_lyare">
+                        <p class="day">Sunday</p>
+                        <p class="today">6 JAN</p>
+                    </div>
+
+
+                    <div class="main_lyare">
+                        <p id="city_name">get output</p>
+
+                    </div>
+                    <div class="middle_layer deta_hide">
+                        <p> <span id="temp">23.4</span> <sup>O</sup>C</p>
+                        {{!-- <p id="temp_status"> <i class="fa fa-cloud" aria-hidden="true"></i> </p> --}}
+                        <img id="temp_status"src="#" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- footer code -->
+    {{>footer}}
+    {{>script}}
+</body>
+
+</html>

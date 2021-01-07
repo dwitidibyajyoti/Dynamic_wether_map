@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Piazzolla', serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  --main-bg: #6a7575;
+  --main-colour: #0097e6;
+}
+html {
+  font-size: 62.5%;
+}
+.main_menu {
+  background-color: var(--main-bg);
+}
+.navbar {
+  background-color: var(--main-bg);
+  height: 5rem;
+}
+.navbar a {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.navbar-toggler {
+  background-color: black;
+}
+.navbar li {
+  margin-left: 20px;
+}
+
+/* main header */
+.main_header_left {
+  height: 61rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main_header_left p {
+  font-size: 2rem;
+}
+.main_header_left h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+.main_header_left span {
+  color: var(--main-colour);
+}
+.main_header_left button {
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+}
+.main_header_left button:hover {
+  box-shadow: 0 8px 6px -6px var(--main-colour);
+}
+
+.main_header_right {
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--main-colour);
+  margin-top: auto;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 5rem;
+  font-size: 1.4rem;
+}
+
+.cityname {
+  width: 50rem;
+  height: 3.6rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.temp_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.submitbut {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  outline: none;
+  border: none;
+  margin-left: -7.4rem;
+  background-color: rgba(163, 138, 67, 0.158);
+  backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.tempinfo {
+  background: rgba(255, 255, 255, 0.2);
+  width: 50rem;
+  height: 30rem;
+  backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  padding: 4rem;
+  border-radius: 1.5rem;
+  margin-top: 10rem;
+}
+.wether_main {
+  width: 100%;
+  height: 86vh;
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.top_lyare {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top_lyare p {
+  font-size: 2rem;
+  color: rgb(69, 92, 81);
+}
+.main_lyare p {
+  font-size: 2rem;
+  color: rgb(69, 92, 81);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.middle_layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle_layer p {
+  font-size: 4rem;
+  color: rgb(69, 92, 81);
+}
+.deta_hide {
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
